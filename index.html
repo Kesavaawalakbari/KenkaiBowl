@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Kenkai Bolo!</title>
+  <style>
+    /* Warna tema Kenkai */
+    :root {
+      --primary-blue: #1E90FF;
+      --secondary-blue: #87CEFA;
+      --white: #ffffff;
+      --bg-light: #f0f8ff;
+      --text-dark: #333333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--primary-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: var(--primary-blue);
+      background-color: var(--white);
+      padding: 15px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      color: var(--white);
+      background-color: var(--primary-blue);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: var(--secondary-blue);
+    }
+
+    .menu-section {
+      background-color: var(--white);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin: 30px auto;
+      max-width: 600px;
+    }
+
+    .menu-title {
+      color: var(--text-dark);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      text-align: left;
+    }
+
+    .menu-item {
+      background-color: var(--bg-light);
+      padding: 15px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item h3 {
+      color: var(--primary-blue);
+      margin: 0 0 10px 0;
+    }
+
+    .menu-item .price {
+      color: var(--text-dark);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Website Kenkai Berhasil Dijalankan!</h1>
+  <p>Server ini menggunakan Nginx + Ubuntu + VS Code Remote.</p>
+  
+  <div class="menu-section">
+    <h2 class="menu-title">Menu Kenkai</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Teriyaki</h3>
+        <p class="price">Rp 12.000</p>
+      </div>
+      <div class="menu-item">
+        <h3>Salted Egg</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+      <div class="menu-item">
+        <h3>Sambal Matah</h3>
+        <p class="price">Rp 13.000</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="button">Kunjungi Menu Kenkai</a>
+</body>
+</html>
